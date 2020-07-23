@@ -3,6 +3,7 @@
 <plugin>
    <extension
          id="com.gunit.projectwizard"
+         name="Gunit Project Wizard"
          point="org.eclipse.ui.newWizards">
       <category
             id="com.gunit.projectwizard.gunit"
@@ -13,7 +14,7 @@
             class="com.gunit.projectwizard.UnitTestProjectWizard"
             descriptionImage="icons/accept.gif"
             finalPerspective="com.gunit.projectwizard.unittest.perspective"
-            icon="icons/accept.gif"
+            icon="icons/tick.png"
             id="com.gunit.projectwizard.unittest"
             name="Unit Test">
       </wizard>
@@ -42,7 +43,7 @@
    <extension
          point="org.eclipse.ui.perspectiveExtensions">
       <perspectiveExtension
-            targetID="com.gunit.projectwizard.unittest.perspective">
+            targetID="*">
          <view
                id="org.eclipse.ui.navigator.ProjectExplorer"
                minimized="false"
@@ -51,6 +52,9 @@
                relative="org.eclipse.ui.editorss"
                visible="true">
          </view>
+         <newWizardShortcut
+               id="com.gunit.projectwizard.unittest">
+         </newWizardShortcut>
       </perspectiveExtension>
    </extension>
 
