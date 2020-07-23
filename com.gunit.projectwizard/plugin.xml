@@ -14,7 +14,7 @@
             class="com.gunit.projectwizard.UnitTestProjectWizard"
             descriptionImage="icons/accept.gif"
             finalPerspective="com.gunit.projectwizard.unittest.perspective"
-            icon="icons/tick.png"
+            icon="icons/accept.gif"
             id="com.gunit.projectwizard.unittest"
             name="Unit Test">
       </wizard>
