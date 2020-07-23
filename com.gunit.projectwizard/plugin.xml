@@ -12,6 +12,7 @@
             category="com.gunit.projectwizard.gunit"
             class="com.gunit.projectwizard.UnitTestProjectWizard"
             descriptionImage="icons/accept.gif"
+            finalPerspective="com.gunit.projectwizard.unittest.perspective"
             icon="icons/accept.gif"
             id="com.gunit.projectwizard.unittest"
             name="Unit Test">
@@ -37,6 +38,20 @@
             id="com.gunit.projectwizard.unittest.perspective"
             name="Gunit Unit test Perspective">
       </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="com.gunit.projectwizard.unittest.perspective">
+         <view
+               id="org.eclipse.ui.navigator.ProjectExplorer"
+               minimized="false"
+               ratio="0.25"
+               relationship="left"
+               relative="org.eclipse.ui.editorss"
+               visible="true">
+         </view>
+      </perspectiveExtension>
    </extension>
 
 </plugin>
