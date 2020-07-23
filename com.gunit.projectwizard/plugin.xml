@@ -2,6 +2,7 @@
 <?eclipse version="3.4"?>
 <plugin>
    <extension
+         id="com.gunit.projectwizard"
          point="org.eclipse.ui.newWizards">
       <category
             id="com.gunit.projectwizard.gunit"
@@ -10,9 +11,32 @@
       <wizard
             category="com.gunit.projectwizard.gunit"
             class="com.gunit.projectwizard.UnitTestProjectWizard"
+            descriptionImage="icons/accept.gif"
+            icon="icons/accept.gif"
             id="com.gunit.projectwizard.unittest"
             name="Unit Test">
       </wizard>
+   </extension>
+   <extension
+         id="com.gunit.projectwizard.unittestprojectnature"
+         name="Unit Test Project Nature"
+         point="org.eclipse.core.resources.natures">
+      <runtime>
+         <run
+               class="com.gunit.projectwizard.UnitTestProjectNature">
+         </run>
+      </runtime>
+   </extension>
+   <extension
+         id="com.gunit.unittest.perspecive"
+         name="Gunit Unit Test Perspective"
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="com.gunit.projectwizard.PerspectiveFactory"
+            icon="icons/accept.gif"
+            id="com.gunit.projectwizard.unittest.perspective"
+            name="Gunit Unit test Perspective">
+      </perspective>
    </extension>
 
 </plugin>
