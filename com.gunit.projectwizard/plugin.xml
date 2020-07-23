@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="com.gunit.projectwizard.gunit"
+            name="Gunit Projects">
+      </category>
+      <wizard
+            category="com.gunit.projectwizard.gunit"
+            class="com.gunit.projectwizard.UnitTestProjectWizard"
+            id="com.gunit.projectwizard.unittest"
+            name="Unit Test">
+      </wizard>
+   </extension>
+
+</plugin>
