@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Test
+Bundle-SymbolicName: com.gunit.projectwizard.test
+Bundle-Version: 1.0.0
+Bundle-Vendor: GUNIT
+Automatic-Module-Name: com.gunit.projectwizard.test
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.junit;bundle-version="4.13.0"
+Bundle-ClassPath: lib/dom4j-1.6.1.jar,
+ lib/jaxen-1.1.6.jar

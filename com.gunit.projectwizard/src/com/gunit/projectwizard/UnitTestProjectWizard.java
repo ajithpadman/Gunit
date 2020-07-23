@@ -16,11 +16,12 @@ import org.eclipse.ui.dialogs.WizardNewProjectCreationPage;
 public class UnitTestProjectWizard extends Wizard implements INewWizard {
 
 	private WizardNewProjectCreationPage _unitTestProjectPage1 = null;
+	private static String WizardName = Messages.UnitTestProjectWizard_WizardName;
 	/**
 	 * 
 	 */
 	public UnitTestProjectWizard() {
-		// TODO Auto-generated constructor stub
+		setWindowTitle(WizardName);
 	}
 
 	@Override
@@ -39,8 +40,9 @@ public class UnitTestProjectWizard extends Wizard implements INewWizard {
 	public void addPages() {
 		// TODO Auto-generated method stub
 		super.addPages();
-		_unitTestProjectPage1 = new WizardNewProjectCreationPage("Unit Test Project Wizard");
-		
+		_unitTestProjectPage1 = new WizardNewProjectCreationPage(WizardName);
+		_unitTestProjectPage1.setTitle(Messages.UnitTestProjectWizard_Title);
+		_unitTestProjectPage1.setDescription(Messages.UnitTestProjectWizard_Description);
 		
 		
 	}
