@@ -13,10 +13,11 @@
             category="com.gunit.projectwizard.gunit"
             class="com.gunit.projectwizard.UnitTestProjectWizard"
             descriptionImage="icons/accept.gif"
-            finalPerspective="com.gunit.projectwizard.unittest.perspective"
-            icon="icons/accept.gif"
-            id="com.gunit.projectwizard.unittest"
-            name="Unit Test">
+            finalPerspective="com.gunit.perspective"
+            icon="icons/accept.png"
+            id="com.gunit.wizard"
+            name="Unit Test"
+            project="true">
       </wizard>
    </extension>
    <extension
@@ -30,13 +31,13 @@
       </runtime>
    </extension>
    <extension
-         id="com.gunit.unittest.perspecive"
+         id="com.gunit.perspecives"
          name="Gunit Unit Test Perspective"
          point="org.eclipse.ui.perspectives">
       <perspective
             class="com.gunit.projectwizard.PerspectiveFactory"
-            icon="icons/accept.gif"
-            id="com.gunit.projectwizard.unittest.perspective"
+            icon="icons/accept.png"
+            id="com.gunit.perspective"
             name="Gunit Unit test Perspective">
       </perspective>
    </extension>
@@ -53,7 +54,7 @@
                visible="true">
          </view>
          <newWizardShortcut
-               id="com.gunit.projectwizard.unittest">
+               id="com.gunit.wizard">
          </newWizardShortcut>
       </perspectiveExtension>
    </extension>

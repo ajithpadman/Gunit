@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Projectwizard
-Bundle-SymbolicName: com.gunit.projectwizard;singleton:=true
+Bundle-SymbolicName: com.gunit;singleton:=true
 Bundle-Version: 1.0.0
 Bundle-Activator: com.gunit.projectwizard.Activator
 Bundle-Vendor: GUNIT
